@@ -1,0 +1,85 @@
+.imgInfo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    visibility: visible;
+    position: relative;
+    float: left;
+    margin-left: 40px;
+}
+
+.imgInfoProcesando{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    margin-right: 0px;
+    margin-left: 35px;
+}
+
+.imgInfoOculta{
+    visibility: hidden;
+}
+
+.lateral{
+    width: 230px;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    text-align: center;
+}
+
+.logo{
+    width: 170px;
+    margin-top: 20px;
+}
+
+.textLogin{
+    color: white;
+    margin-left: 40px;
+    font-weight: bold;
+    text-align: left; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+.btn{
+    border: 0px solid rgb(223, 123, 10);
+    background: linear-gradient(rgb(255, 187, 60),rgb(223, 123, 10));
+    font-weight: bold;
+    font-size: small;
+    margin: 5px;
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(black, .4);
+    background-clip: padding-box;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(rgb(247, 196, 103),rgb(223, 123, 10));
+    border: 1px solid ghostwhite;
+    color: ghostwhite;
+}
+
+.inputLogin{
+    margin: 5px 0;
+    width: 170px;
+}
+
+.inputLogin:focus{
+    outline: none !important;
+    border: 2px solid rgb(223, 123, 10);
+}
+
+.textInfo{
+    color: ghostwhite;
+    float: left;
+}

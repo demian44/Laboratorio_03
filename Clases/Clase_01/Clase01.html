@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Clase 01</title>
+        <script type="text/javascript">
+            //document.getElementById("txtUser").value = "Otro valor";
+            function saludar(nombre) {
+                //var saludo = "Hola ";
+                //alert(saludo + nombre);
+                var user = document.getElementById("txtUser").value;
+                var pass = document.getElementById("txtPass").value;
+
+                if(user.length == 0 || pass.length == 0)
+                {
+                    alert("¡Debe completar el nombre de usuario y contraseña!");
+                }    
+                else
+                {                    
+                    alert("Usuario: " + user + " Password: " + pass);  
+                }          
+            }    
+
+            function $(id)
+            {
+                return document.getElementById(id);
+            }        
+        </script>
+    </head>
+
+    <body>
+        <fieldset form="form1" style="top:50%; left:50%; transform:translate(-50%,-50%); width: 100px; height: 150px; position:absolute;">
+            <legend>Login</legend>
+            <form id="form1" method="GET" style="text-align:center;">
+                <label id="lblUser" for="txtUser">Usuario: </label>
+                <br/>
+                <input type="text" id="txtUser" name="textUser" size="25" maxlength="5" value="USER">
+                <br/>
+                <label id="lblPass" for="txtPass">Contraseña: </label>
+                <br/>
+                <input type="password" id="txtPass" name="textPass" size="25" maxlength="8">
+                <br/>
+                <input type="checkbox" name="Check" id="check" value="información que recuperare como desarrollador" checked>
+                <label style="margin:0 3 0 0">Recordar Texto</label>
+                <br/>
+                <input type="submit" id="btnSub" onclick="saludar('Mauricio');">
+                <input type="reset" id="btnReset" value="Limpiar">
+            </form>
+        </fieldset>
+    </body>
+
+</html>

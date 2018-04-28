@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 02</title>
+    <script>
+        function MostrarMeses(){
+            var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+            meses.forEach(function(element,index,meses){
+                document.write(element+" - "+(index+1)+"</br>");
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="MostrarMeses()" value="Mostrar Meses">
+</body>
+</html>

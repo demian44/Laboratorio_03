@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./JS/Funciones.js"></script>
+    <style type="text/css">
+        P{color: red;}
+        .negrita{
+            font-weight: bold;
+        }
+        .btn{
+            background-color:rgb(255, 0, 0);
+            color:white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+
+
+        }
+    </style>
+    <title>Clase 02</title>
+</head>
+
+<body>
+    <header>
+        <h1>Título Principal</h1>
+        <h2>Subtítulo</h2>
+        <nav>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>
+                    <a href="#" id="elemento3">Elemento 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <h2>Articulo 1</h2>
+            <p class="negrita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et eros malesuada odio porta elementum. Aenean
+                eget viverra erat, vestibulum euismod magna. Suspendisse sit amet scelerisque enim, id euismod eros. Integer
+                tristique risus et scelerisque convallis. Phasellus placerat accumsan sem sed feugiat. Nunc ligula augue,
+                ultrices eleifend euismod nec, mattis id nibh. Phasellus sagittis sem vel ornare pulvinar. Aliquam fermentum
+                dolor sit amet tellus efficitur, vel imperdiet sem varius. Donec volutpat tellus ac lorem consectetur sollicitudin.
+                Fusce elementum dui leo, in pretium turpis faucibus eget. Phasellus commodo sollicitudin est a pharetra.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam optio ullam mollitia voluptas ad, sit modi temporibus iusto assumenda voluptatem odit itaque est praesentium! Nihil ipsam dolor distinctio eius.</p>
+            <h2>Articulo 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et eros malesuada odio porta elementum. Aenean
+                eget viverra erat, vestibulum euismod magna. Suspendisse sit amet scelerisque enim, id euismod eros. Integer
+                tristique risus et scelerisque convallis. Phasellus placerat accumsan sem sed feugiat. Nunc ligula augue,
+                ultrices eleifend euismod nec, mattis id nibh. Phasellus sagittis sem vel ornare pulvinar. Aliquam fermentum
+                dolor sit amet tellus efficitur, vel imperdiet sem varius. Donec volutpat tellus ac lorem consectetur sollicitudin.
+                Fusce elementum dui leo, in pretium turpis faucibus eget. Phasellus commodo sollicitudin est a pharetra.</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <fieldset>
+                <legend>Sumar Numeros</legend>
+                <label id="lbl1" for="lbl1"> </label><br/>
+                <input type="number" id="txtOperando1" name="txtOperando1">
+                +
+                <input type="number" id="txtOperando2" name="txtOperando2">
+                <input class="btn" type="button" id="btnSumar" value="Sumar" onclick="Sumar(false)">
+                <input class="btn" type="button" id="btnSumarYGuardar" value="Sumar y Guardar" onclick="Sumar(true)">
+                <input class="btn" type="button" id="btnLimpiar" value="Limpiar" onclick="Limpiar()">
+                <br/><br/>
+                <label id="lblResultado" for="txtResultado">Resultado: </label>
+                <input type="number" id="txtResultado" name="txtResultado" readonly>
+            </fieldset>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Operando 1</th>
+                        <th>Operando 2</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaResultados">
+
+                </tbody>             
+            </table>
+        </article>        
+    </section>
+
+    <footer>Pie de pagina</footer>
+</body>
+
+</html>

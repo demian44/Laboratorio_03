@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 04</title>
+    <script>
+        var callBack = function hacerAlgo(resultado){
+            console.log("Estoy haciendo algo");
+            console.log(resultado);
+        }
+
+        function sumar(num1,num2,llamada){
+            callBack(num1+num2);
+        }
+
+        sumar(1,2,callBack);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

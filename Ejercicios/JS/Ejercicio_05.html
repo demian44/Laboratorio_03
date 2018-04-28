@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 05</title>
+    <script>
+        window.onload = function numeros(){
+            var numero = 0
+            while(numero <= 0){
+                numero = parseInt(prompt("Ingrese un número positivo:"));
+            }
+            
+            var resultado = 1;
+            for(i = numero; i > 1; i--){
+                resultado *=  i;
+            }
+
+            document.write(resultado);
+        };        
+    </script>
+</head>
+<body>
+</body>
+</html>
